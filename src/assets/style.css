@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Smooth font scaling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.4s, color 0.4s;
+  }
+  
+  /* Light mode text color */
+  body:not(.bg-dark) {
+    color: black;
+  }
+  
+  /* Dark mode text color */
+  .bg-dark {
+    color: white;
+  }
+  
+  /* Headings animation */
+  h1, h2, h3, h4, h5 {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Section padding and border styling */
+  section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+  }
+  
+  /* Animated underline on hover */
+  a.text-primary:hover {
+    text-decoration: underline wavy;
+    color: #0dcaf0;
+  }
+  
+  /* Button styling with hover animation */
+  button.btn {
+    transition: all 0.3s ease;
+  }
+  
+  button.btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #0dcaf0;
+    border-radius: 10px;
+  }
+  
+  /* Dark mode enhancements */
+  .bg-dark {
+    background-color: #121212 !important;
+  }
+  
+  .bg-secondary {
+    background-color: #1e1e1e !important;
+  }
+  
+  .text-muted {
+    color: #cccccc !important;
+  }
+  
+  /* Footer fade-in */
+  footer {
+    animation: fadeInUp 1s ease-in;
+  }
+  
+  /* Fade-in keyframes */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Center section text */
+section {
+    text-align: center;
+  }
+  
+  /* Improve card image sizing */
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Adjust navbar spacing */
+  body {
+    /* padding-top: 70px; */
+  }
+
+  .marquee-container div {
+    margin: 0 20px;
+    text-align: center;
+  }
